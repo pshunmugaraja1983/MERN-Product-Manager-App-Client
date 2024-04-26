@@ -4,15 +4,6 @@ import Table from 'react-bootstrap/Table';
 
 const ProductItems = ({productItems}) => {
 
-    const formatDate = (dateAsString) => {
-
-        const dateObj = new Date(dateAsString);
-        const dateAsStr 
-            = dateObj.getDate() + "-" + (dateObj.getMonth() + 1) + "-" + dateObj.getFullYear();
-
-        return dateAsStr;
-    }
-
     function productsTable() {
         return (
           <Table striped bordered hover>
